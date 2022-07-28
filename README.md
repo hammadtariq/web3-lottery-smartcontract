@@ -25,13 +25,6 @@ cd web3-lottery-smartcontract
 yarn
 ```
 
-## Frontend App
-deployed at: https://plain-moon-4770.on.fleek.co/
-Repository at: https://github.com/hammadtariq/web3-lottery-system
-
-## Smart Contract deployed at Rinkeby testnet
-https://rinkeby.etherscan.io/address/0x17A639eb47a4189504554e476a38F7921CAe6F38#events
-
 # Usage
 
 Deploy:

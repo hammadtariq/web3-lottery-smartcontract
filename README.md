@@ -1,26 +1,36 @@
 # Web 3.0 Lottery (Raffle)
 
-# Getting Started
+## Features
 
-## Requirements
+1. Generate random numbers using chainlink VRF 2.0
+2. Auto trigger Pick Lottery Winner event using chainlink keepers
+3. Frontend is deployed on IPFS node using Fleek CI/CD
+   https://plain-moon-4770.on.fleek.co/
+4. Smart contract is deployed on Rinkeby Testnet
+   https://rinkeby.etherscan.io/address/0x17A639eb47a4189504554e476a38F7921CAe6F38#events
 
-- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-  - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
-- [Nodejs](https://nodejs.org/en/)
-  - You'll know you've installed nodejs right if you can run:
-    - `node --version` and get an ouput like: `vx.x.x`
-- [Yarn](https://yarnpkg.com/getting-started/install) instead of `npm`
-  - You'll know you've installed yarn right if you can run:
-    - `yarn --version` and get an output like: `x.x.x`
-    - You might need to [install it with `npm`](https://classic.yarnpkg.com/lang/en/docs/install/) or `corepack`
+## Tech Stack
+
+0. Nodejs
+1. Hardhat
+2. Chainlink
+3. Openzeppelin
+3. Etherscan
 
 ## Quickstart
 
 ```
 git clone "github repo url"
-cd web3-lottery
+cd web3-lottery-smartcontract
 yarn
 ```
+
+## Frontend App
+deployed at: https://plain-moon-4770.on.fleek.co/
+Repository at: https://github.com/hammadtariq/web3-lottery-system
+
+## Smart Contract deployed at Rinkeby testnet
+https://rinkeby.etherscan.io/address/0x17A639eb47a4189504554e476a38F7921CAe6F38#events
 
 # Usage
 
@@ -28,12 +38,16 @@ Deploy:
 
 ```
 yarn hardhat deploy
+OR
+yarn hardhat deploy --network rinkeby
 ```
 
 ## Testing
 
 ```
-yarn hardhat test
+yarn hardhat test // run unit tests
+OR
+yarn hardhat test --network rinkeby // Run Staging tests
 ```
 
 ### Test Coverage
